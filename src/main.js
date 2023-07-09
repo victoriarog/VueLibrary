@@ -2,7 +2,7 @@ import Vue from 'vue'
 import CustomButton from './components/CustomButton.vue'
 import TextInput from './components/TextInput.vue'
 
-Vue.component('CustomButton', CustomButton);
+Vue.component('Button', CustomButton);
 Vue.component('TextInput', TextInput);
 
 const buttonElement = document.querySelector('#buttonId');
