@@ -10,6 +10,21 @@ export default defineConfig({
     vue(),
     vueJsx(),
   ],
+  build: {
+    lib: {
+      entry: resolve(__dirname, "src/main.js"),
+      name: "vuecomponentlibrary",
+      fileName: "vuecomponentlibrary",
+    },
+    rollupOptions: {
+      external: ["vue"],
+      output: {
+        globals: {
+          vue: "Vue",
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -6,6 +6,7 @@
     class="custom-button"
     @mouseenter="hovered = true"
     @mouseleave="hovered = false"
+    @click="handleClick"
 >
     <slot></slot>
 </button>
@@ -19,7 +20,12 @@ export default {
         return {
             hovered: false
     };
+    },
+    methods: {
+    handleClick() {
+      //onClick event
     }
+  }
 };
 </script>
 
