@@ -1,6 +1,7 @@
 {
-  "name": "vuetest",
+  "name": "vuecomplibrary",
   "version": "0.0.0",
+  "description": "A component library",
   "private": true,
   "main": "src/main.js",
   "scripts": {

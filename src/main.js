@@ -1,8 +1,8 @@
 import Vue from 'vue'
-import Button from './components/Button.vue'
+import CustomButton from './components/CustomButton.vue'
 import TextInput from './components/TextInput.vue'
 
-Vue.component('Button', Button);
+Vue.component('CustomButton', CustomButton);
 Vue.component('TextInput', TextInput);
 
 const buttonElement = document.querySelector('#buttonId');
@@ -21,6 +21,6 @@ if (textInputElement) {
 }
 
 export default {
-    Button,
+    CustomButton,
     TextInput
 };
