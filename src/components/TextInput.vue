@@ -1,30 +1,31 @@
 <template>
-<input
-    type="text"
-    :style="{
-    backgroundColor: hovered ? '#0070d2' : '#009ee3'
-    }"
-    class="custom-input"
-    v-model="inputValue"
-    @mouseenter="hovered = true"
-    @mouseleave="hovered = false"
-/>
-</template>
-
-<script>
-export default {
+    <input
+      type="text"
+      class="custom-input"
+      v-model="inputValue"
+    />
+  </template>
+  
+  <script>
+  export default {
     name: 'TextInput',
     data() {
-        return {
-        inputValue: '',
-        hovered: false
-        };
+      return {
+        inputValue: ''
+      };
     }
-};
-</script>
-
-<style scoped>
-.custom-input {
-padding: 10px;
-}
-</style>
+  };
+  </script>
+  
+  <style scoped>
+  .custom-input {
+    padding: 10px;
+    background-color: #009ee3;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-input:hover {
+    background-color: #0070d2;
+  }
+  </style>
+  
