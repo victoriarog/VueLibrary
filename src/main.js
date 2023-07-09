@@ -1,6 +1,12 @@
-import './assets/main.css'
+import Vue from 'vue'
+import Button from './components/Button.vue'
+import TextInput from './components/TextInput.vue'
 
-import { createApp } from 'vue'
-import App from './App.vue'
+Vue.component('Button', Button);
+Vue.component('TextInput', TextInput);
 
-createApp(App).mount('#app')
+new Vue({
+    el: '#app'
+  })
+  
+  export default {Button, TextInput};
